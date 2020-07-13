@@ -1,7 +1,7 @@
 # SISCONT
 
 
-Libros Contables en Desarrollo}
+## Libros Contables en Desarrollo
 
--Libro de Compras
--Libro de Ventas
+### -Libro de Compras
+### -Libro de Ventas
