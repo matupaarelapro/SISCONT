@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "P2FSaLXmmNR4INsOit7HpVciY1tfHL6PpXnropTJ4TAbm2H6BdMn1w1PKXaHL41NufIe1dAbXpUrBshFCR/0xQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Developers\\Source\\Repos\\SISCONT\\prjSISCONT\\Datos\\Datos.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Developers\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Developers\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
