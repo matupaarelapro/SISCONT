@@ -1,14 +1,29 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Text;
 using Datos;
 
 namespace Negocios
 {
-    public class RegistroCompras
+    public class Compras
     {
 
-        private DaoRegistroCompras objRegistroCompras = new DaoRegistroCompras();
+        private DaoCompras objCompras = new DaoCompras();
+
+        public DataTable getAllCpdTypes()
+        {
+            DataTable dataTableCDPTypes = new DataTable();
+            dataTableCDPTypes = objCompras.allCdpTypes();
+            return dataTableCDPTypes;
+        }
+
+        public DataTable getProvider(string ruc)
+        {
+            DataTable dataTableProvider = new DataTable();
+            dataTableProvider = objCompras.showProveedor(ruc);
+            return dataTableProvider;
+        }
 
         public void save(
             int mes, string nReg, string fechaEmision, string fechaPago, string cTipo, string cSeire, string cnDocumento,
@@ -18,7 +33,7 @@ namespace Negocios
             double constanciaMonto, string constanciaReferencia
             )
         {
-            objRegistroCompras.insert(
+            objCompras.insert(
                 mes,
                 nReg,
                 fechaEmision,
