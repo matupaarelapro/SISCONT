@@ -29,16 +29,40 @@
         private void InitializeComponent()
         {
             this.dgvRegistroCompras = new System.Windows.Forms.DataGridView();
+            this.comprasMes = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasNumeroRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasFechaEmision = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasFechaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasCdpTipo = new System.Windows.Forms.DataGridViewComboBoxColumn();
+            this.comprasCdpSerie = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasCdpNumeroDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasProveedorTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasProveedorNumeroDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasProveedorTipoDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasProveedorRazonSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasCuenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasBaseImponible = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasIgv = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasNoGravada = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasDescuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasImporteTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasDolares = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasTipoCambio = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasPercepcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasDestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasDescripcionDestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasCuentaDestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasConstanciaNumero = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasConstanciaFechaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasConstanciaMonto = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.comprasConstanciaReferencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.tabControl1 = new System.Windows.Forms.TabControl();
             this.tabPage1 = new System.Windows.Forms.TabPage();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.dgvRegistroVentas = new System.Windows.Forms.DataGridView();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.btnGuardarCompras = new System.Windows.Forms.Button();
-            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
-            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
-            this.librosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.btnGuardarVentas = new System.Windows.Forms.Button();
             this.ventasMes = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ventasNumeroRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ventasFechaEmision = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -72,39 +96,15 @@
             this.ventasDetraccionSoles = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ventasReferencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ventasObservacion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasMes = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasNumeroRegistro = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasFechaEmision = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasFechaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasCdpTipo = new System.Windows.Forms.DataGridViewComboBoxColumn();
-            this.comprasCdpSerie = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasCdpNumeroDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasProveedorTipo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasProveedorNumeroDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasProveedorTipoDocumento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasProveedorRazonSocial = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasCuenta = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasDescripcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasBaseImponible = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasIgv = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasNoGravada = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasDescuento = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasImporteTotal = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasDolares = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasTipoCambio = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasPercepcion = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasDestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasDescripcionDestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasCuentaDestino = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasConstanciaNumero = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasConstanciaFechaPago = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasConstanciaMonto = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.comprasConstanciaReferencia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.testlabel = new System.Windows.Forms.Label();
-            this.btnBuscarProveedor = new System.Windows.Forms.Button();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.txtBuscarProveedor = new System.Windows.Forms.TextBox();
+            this.btnBuscarProveedor = new System.Windows.Forms.Button();
+            this.testlabel = new System.Windows.Forms.Label();
+            this.btnGuardarVentas = new System.Windows.Forms.Button();
+            this.btnGuardarCompras = new System.Windows.Forms.Button();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.toolStripMenuItem1 = new System.Windows.Forms.ToolStripMenuItem();
+            this.librosToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             ((System.ComponentModel.ISupportInitialize)(this.dgvRegistroCompras)).BeginInit();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -154,7 +154,162 @@
             this.dgvRegistroCompras.Size = new System.Drawing.Size(1094, 454);
             this.dgvRegistroCompras.TabIndex = 0;
             this.dgvRegistroCompras.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.cellContentClickEvent);
+            this.dgvRegistroCompras.CellEndEdit += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRegistroCompras_CellEndEdit);
+            this.dgvRegistroCompras.CellLeave += new System.Windows.Forms.DataGridViewCellEventHandler(this.dgvRegistroCompras_CellLeave_1);
             this.dgvRegistroCompras.TabIndexChanged += new System.EventHandler(this.tabIndexChangedEvent);
+            this.dgvRegistroCompras.KeyDown += new System.Windows.Forms.KeyEventHandler(this.dgvRegistroCompras_KeyDown);
+            // 
+            // comprasMes
+            // 
+            this.comprasMes.HeaderText = "Mes";
+            this.comprasMes.Name = "comprasMes";
+            // 
+            // comprasNumeroRegistro
+            // 
+            this.comprasNumeroRegistro.HeaderText = "N° Registro";
+            this.comprasNumeroRegistro.Name = "comprasNumeroRegistro";
+            // 
+            // comprasFechaEmision
+            // 
+            this.comprasFechaEmision.HeaderText = "Fecha de Emisión";
+            this.comprasFechaEmision.Name = "comprasFechaEmision";
+            // 
+            // comprasFechaPago
+            // 
+            this.comprasFechaPago.HeaderText = "Fecha de Pago";
+            this.comprasFechaPago.Name = "comprasFechaPago";
+            // 
+            // comprasCdpTipo
+            // 
+            this.comprasCdpTipo.HeaderText = "Comprobante Tipo";
+            this.comprasCdpTipo.Name = "comprasCdpTipo";
+            this.comprasCdpTipo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.comprasCdpTipo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
+            // 
+            // comprasCdpSerie
+            // 
+            this.comprasCdpSerie.HeaderText = "Comprobante Serie";
+            this.comprasCdpSerie.Name = "comprasCdpSerie";
+            // 
+            // comprasCdpNumeroDocumento
+            // 
+            this.comprasCdpNumeroDocumento.HeaderText = "Comprobante Número Documento";
+            this.comprasCdpNumeroDocumento.Name = "comprasCdpNumeroDocumento";
+            // 
+            // comprasProveedorTipo
+            // 
+            this.comprasProveedorTipo.HeaderText = "Proveedor Tipo";
+            this.comprasProveedorTipo.Name = "comprasProveedorTipo";
+            // 
+            // comprasProveedorNumeroDocumento
+            // 
+            this.comprasProveedorNumeroDocumento.HeaderText = "Proveedor Numero Documento";
+            this.comprasProveedorNumeroDocumento.Name = "comprasProveedorNumeroDocumento";
+            // 
+            // comprasProveedorTipoDocumento
+            // 
+            this.comprasProveedorTipoDocumento.HeaderText = "Proveedor Tipo Documento";
+            this.comprasProveedorTipoDocumento.Name = "comprasProveedorTipoDocumento";
+            // 
+            // comprasProveedorRazonSocial
+            // 
+            this.comprasProveedorRazonSocial.HeaderText = "Proveedor Razón Social";
+            this.comprasProveedorRazonSocial.Name = "comprasProveedorRazonSocial";
+            // 
+            // comprasCuenta
+            // 
+            this.comprasCuenta.HeaderText = "Cuenta";
+            this.comprasCuenta.Name = "comprasCuenta";
+            // 
+            // comprasDescripcion
+            // 
+            this.comprasDescripcion.HeaderText = "Descripción";
+            this.comprasDescripcion.Name = "comprasDescripcion";
+            // 
+            // comprasBaseImponible
+            // 
+            this.comprasBaseImponible.HeaderText = "Base Imponible";
+            this.comprasBaseImponible.Name = "comprasBaseImponible";
+            // 
+            // comprasIgv
+            // 
+            this.comprasIgv.HeaderText = "IGV";
+            this.comprasIgv.Name = "comprasIgv";
+            // 
+            // comprasNoGravada
+            // 
+            this.comprasNoGravada.HeaderText = "No Gravada";
+            this.comprasNoGravada.Name = "comprasNoGravada";
+            // 
+            // comprasDescuento
+            // 
+            this.comprasDescuento.HeaderText = "Descuento";
+            this.comprasDescuento.Name = "comprasDescuento";
+            // 
+            // comprasImporteTotal
+            // 
+            this.comprasImporteTotal.HeaderText = "Importe Total";
+            this.comprasImporteTotal.Name = "comprasImporteTotal";
+            // 
+            // comprasDolares
+            // 
+            this.comprasDolares.HeaderText = "Dolares";
+            this.comprasDolares.Name = "comprasDolares";
+            // 
+            // comprasTipoCambio
+            // 
+            this.comprasTipoCambio.HeaderText = "Tipo de Cambio";
+            this.comprasTipoCambio.Name = "comprasTipoCambio";
+            // 
+            // comprasPercepcion
+            // 
+            this.comprasPercepcion.HeaderText = "Percepción";
+            this.comprasPercepcion.Name = "comprasPercepcion";
+            // 
+            // comprasDestino
+            // 
+            this.comprasDestino.HeaderText = "Destino";
+            this.comprasDestino.Name = "comprasDestino";
+            // 
+            // comprasDescripcionDestino
+            // 
+            this.comprasDescripcionDestino.HeaderText = "Descripción Destino";
+            this.comprasDescripcionDestino.Name = "comprasDescripcionDestino";
+            // 
+            // comprasCuentaDestino
+            // 
+            this.comprasCuentaDestino.HeaderText = "Cuenta Destino";
+            this.comprasCuentaDestino.Name = "comprasCuentaDestino";
+            // 
+            // comprasPago
+            // 
+            this.comprasPago.HeaderText = "Pago";
+            this.comprasPago.Name = "comprasPago";
+            // 
+            // comprasCodigo
+            // 
+            this.comprasCodigo.HeaderText = "Código";
+            this.comprasCodigo.Name = "comprasCodigo";
+            // 
+            // comprasConstanciaNumero
+            // 
+            this.comprasConstanciaNumero.HeaderText = "Constancia Número";
+            this.comprasConstanciaNumero.Name = "comprasConstanciaNumero";
+            // 
+            // comprasConstanciaFechaPago
+            // 
+            this.comprasConstanciaFechaPago.HeaderText = "Constancia de Fecha de Pago";
+            this.comprasConstanciaFechaPago.Name = "comprasConstanciaFechaPago";
+            // 
+            // comprasConstanciaMonto
+            // 
+            this.comprasConstanciaMonto.HeaderText = "Constancia Monto";
+            this.comprasConstanciaMonto.Name = "comprasConstanciaMonto";
+            // 
+            // comprasConstanciaReferencia
+            // 
+            this.comprasConstanciaReferencia.HeaderText = "Constancia Referencia";
+            this.comprasConstanciaReferencia.Name = "comprasConstanciaReferencia";
             // 
             // tabControl1
             // 
@@ -233,61 +388,6 @@
             this.dgvRegistroVentas.Name = "dgvRegistroVentas";
             this.dgvRegistroVentas.Size = new System.Drawing.Size(1094, 454);
             this.dgvRegistroVentas.TabIndex = 1;
-            // 
-            // panel1
-            // 
-            this.panel1.Controls.Add(this.txtBuscarProveedor);
-            this.panel1.Controls.Add(this.btnBuscarProveedor);
-            this.panel1.Controls.Add(this.testlabel);
-            this.panel1.Controls.Add(this.btnGuardarVentas);
-            this.panel1.Controls.Add(this.btnGuardarCompras);
-            this.panel1.Location = new System.Drawing.Point(12, 27);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1101, 87);
-            this.panel1.TabIndex = 2;
-            // 
-            // btnGuardarCompras
-            // 
-            this.btnGuardarCompras.Location = new System.Drawing.Point(721, 25);
-            this.btnGuardarCompras.Name = "btnGuardarCompras";
-            this.btnGuardarCompras.Size = new System.Drawing.Size(109, 23);
-            this.btnGuardarCompras.TabIndex = 0;
-            this.btnGuardarCompras.Text = "Guardar Compras";
-            this.btnGuardarCompras.UseVisualStyleBackColor = true;
-            this.btnGuardarCompras.Click += new System.EventHandler(this.btnGuardar_Click);
-            // 
-            // menuStrip1
-            // 
-            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
-            this.toolStripMenuItem1,
-            this.librosToolStripMenuItem});
-            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
-            this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(1132, 24);
-            this.menuStrip1.TabIndex = 3;
-            this.menuStrip1.Text = "menuStrip1";
-            // 
-            // toolStripMenuItem1
-            // 
-            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
-            this.toolStripMenuItem1.Size = new System.Drawing.Size(48, 20);
-            this.toolStripMenuItem1.Text = "Inicio";
-            // 
-            // librosToolStripMenuItem
-            // 
-            this.librosToolStripMenuItem.Name = "librosToolStripMenuItem";
-            this.librosToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
-            this.librosToolStripMenuItem.Text = "Libros";
-            // 
-            // btnGuardarVentas
-            // 
-            this.btnGuardarVentas.Location = new System.Drawing.Point(857, 25);
-            this.btnGuardarVentas.Name = "btnGuardarVentas";
-            this.btnGuardarVentas.Size = new System.Drawing.Size(119, 23);
-            this.btnGuardarVentas.TabIndex = 1;
-            this.btnGuardarVentas.Text = "Guardar Ventas";
-            this.btnGuardarVentas.UseVisualStyleBackColor = true;
-            this.btnGuardarVentas.Click += new System.EventHandler(this.btnGuardarVentas_Click);
             // 
             // ventasMes
             // 
@@ -454,166 +554,25 @@
             this.ventasObservacion.HeaderText = "Observación";
             this.ventasObservacion.Name = "ventasObservacion";
             // 
-            // comprasMes
+            // panel1
             // 
-            this.comprasMes.HeaderText = "Mes";
-            this.comprasMes.Name = "comprasMes";
+            this.panel1.Controls.Add(this.txtBuscarProveedor);
+            this.panel1.Controls.Add(this.btnBuscarProveedor);
+            this.panel1.Controls.Add(this.testlabel);
+            this.panel1.Controls.Add(this.btnGuardarVentas);
+            this.panel1.Controls.Add(this.btnGuardarCompras);
+            this.panel1.Location = new System.Drawing.Point(12, 27);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1101, 87);
+            this.panel1.TabIndex = 2;
             // 
-            // comprasNumeroRegistro
+            // txtBuscarProveedor
             // 
-            this.comprasNumeroRegistro.HeaderText = "N° Registro";
-            this.comprasNumeroRegistro.Name = "comprasNumeroRegistro";
-            // 
-            // comprasFechaEmision
-            // 
-            this.comprasFechaEmision.HeaderText = "Fecha de Emisión";
-            this.comprasFechaEmision.Name = "comprasFechaEmision";
-            // 
-            // comprasFechaPago
-            // 
-            this.comprasFechaPago.HeaderText = "Fecha de Pago";
-            this.comprasFechaPago.Name = "comprasFechaPago";
-            // 
-            // comprasCdpTipo
-            // 
-            this.comprasCdpTipo.HeaderText = "Comprobante Tipo";
-            this.comprasCdpTipo.Name = "comprasCdpTipo";
-            this.comprasCdpTipo.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            this.comprasCdpTipo.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.Automatic;
-            // 
-            // comprasCdpSerie
-            // 
-            this.comprasCdpSerie.HeaderText = "Comprobante Serie";
-            this.comprasCdpSerie.Name = "comprasCdpSerie";
-            // 
-            // comprasCdpNumeroDocumento
-            // 
-            this.comprasCdpNumeroDocumento.HeaderText = "Comprobante Número Documento";
-            this.comprasCdpNumeroDocumento.Name = "comprasCdpNumeroDocumento";
-            // 
-            // comprasProveedorTipo
-            // 
-            this.comprasProveedorTipo.HeaderText = "Proveedor Tipo";
-            this.comprasProveedorTipo.Name = "comprasProveedorTipo";
-            // 
-            // comprasProveedorNumeroDocumento
-            // 
-            this.comprasProveedorNumeroDocumento.HeaderText = "Proveedor Numero Documento";
-            this.comprasProveedorNumeroDocumento.Name = "comprasProveedorNumeroDocumento";
-            // 
-            // comprasProveedorTipoDocumento
-            // 
-            this.comprasProveedorTipoDocumento.HeaderText = "Proveedor Tipo Documento";
-            this.comprasProveedorTipoDocumento.Name = "comprasProveedorTipoDocumento";
-            // 
-            // comprasProveedorRazonSocial
-            // 
-            this.comprasProveedorRazonSocial.HeaderText = "Proveedor Razón Social";
-            this.comprasProveedorRazonSocial.Name = "comprasProveedorRazonSocial";
-            // 
-            // comprasCuenta
-            // 
-            this.comprasCuenta.HeaderText = "Cuenta";
-            this.comprasCuenta.Name = "comprasCuenta";
-            // 
-            // comprasDescripcion
-            // 
-            this.comprasDescripcion.HeaderText = "Descripción";
-            this.comprasDescripcion.Name = "comprasDescripcion";
-            // 
-            // comprasBaseImponible
-            // 
-            this.comprasBaseImponible.HeaderText = "Base Imponible";
-            this.comprasBaseImponible.Name = "comprasBaseImponible";
-            // 
-            // comprasIgv
-            // 
-            this.comprasIgv.HeaderText = "IGV";
-            this.comprasIgv.Name = "comprasIgv";
-            // 
-            // comprasNoGravada
-            // 
-            this.comprasNoGravada.HeaderText = "No Gravada";
-            this.comprasNoGravada.Name = "comprasNoGravada";
-            // 
-            // comprasDescuento
-            // 
-            this.comprasDescuento.HeaderText = "Descuento";
-            this.comprasDescuento.Name = "comprasDescuento";
-            // 
-            // comprasImporteTotal
-            // 
-            this.comprasImporteTotal.HeaderText = "Importe Total";
-            this.comprasImporteTotal.Name = "comprasImporteTotal";
-            // 
-            // comprasDolares
-            // 
-            this.comprasDolares.HeaderText = "Dolares";
-            this.comprasDolares.Name = "comprasDolares";
-            // 
-            // comprasTipoCambio
-            // 
-            this.comprasTipoCambio.HeaderText = "Tipo de Cambio";
-            this.comprasTipoCambio.Name = "comprasTipoCambio";
-            // 
-            // comprasPercepcion
-            // 
-            this.comprasPercepcion.HeaderText = "Percepción";
-            this.comprasPercepcion.Name = "comprasPercepcion";
-            // 
-            // comprasDestino
-            // 
-            this.comprasDestino.HeaderText = "Destino";
-            this.comprasDestino.Name = "comprasDestino";
-            // 
-            // comprasDescripcionDestino
-            // 
-            this.comprasDescripcionDestino.HeaderText = "Descripción Destino";
-            this.comprasDescripcionDestino.Name = "comprasDescripcionDestino";
-            // 
-            // comprasCuentaDestino
-            // 
-            this.comprasCuentaDestino.HeaderText = "Cuenta Destino";
-            this.comprasCuentaDestino.Name = "comprasCuentaDestino";
-            // 
-            // comprasPago
-            // 
-            this.comprasPago.HeaderText = "Pago";
-            this.comprasPago.Name = "comprasPago";
-            // 
-            // comprasCodigo
-            // 
-            this.comprasCodigo.HeaderText = "Código";
-            this.comprasCodigo.Name = "comprasCodigo";
-            // 
-            // comprasConstanciaNumero
-            // 
-            this.comprasConstanciaNumero.HeaderText = "Constancia Número";
-            this.comprasConstanciaNumero.Name = "comprasConstanciaNumero";
-            // 
-            // comprasConstanciaFechaPago
-            // 
-            this.comprasConstanciaFechaPago.HeaderText = "Constancia de Fecha de Pago";
-            this.comprasConstanciaFechaPago.Name = "comprasConstanciaFechaPago";
-            // 
-            // comprasConstanciaMonto
-            // 
-            this.comprasConstanciaMonto.HeaderText = "Constancia Monto";
-            this.comprasConstanciaMonto.Name = "comprasConstanciaMonto";
-            // 
-            // comprasConstanciaReferencia
-            // 
-            this.comprasConstanciaReferencia.HeaderText = "Constancia Referencia";
-            this.comprasConstanciaReferencia.Name = "comprasConstanciaReferencia";
-            // 
-            // testlabel
-            // 
-            this.testlabel.AutoSize = true;
-            this.testlabel.Location = new System.Drawing.Point(255, 42);
-            this.testlabel.Name = "testlabel";
-            this.testlabel.Size = new System.Drawing.Size(35, 13);
-            this.testlabel.TabIndex = 2;
-            this.testlabel.Text = "label1";
+            this.txtBuscarProveedor.Location = new System.Drawing.Point(140, 39);
+            this.txtBuscarProveedor.Name = "txtBuscarProveedor";
+            this.txtBuscarProveedor.Size = new System.Drawing.Size(100, 20);
+            this.txtBuscarProveedor.TabIndex = 4;
+            this.txtBuscarProveedor.Text = "20448484816";
             // 
             // btnBuscarProveedor
             // 
@@ -625,13 +584,57 @@
             this.btnBuscarProveedor.UseVisualStyleBackColor = true;
             this.btnBuscarProveedor.Click += new System.EventHandler(this.btnBuscarProveedor_Click);
             // 
-            // txtBuscarProveedor
+            // testlabel
             // 
-            this.txtBuscarProveedor.Location = new System.Drawing.Point(140, 39);
-            this.txtBuscarProveedor.Name = "txtBuscarProveedor";
-            this.txtBuscarProveedor.Size = new System.Drawing.Size(100, 20);
-            this.txtBuscarProveedor.TabIndex = 4;
-            this.txtBuscarProveedor.Text = "20448484816";
+            this.testlabel.AutoSize = true;
+            this.testlabel.Location = new System.Drawing.Point(255, 42);
+            this.testlabel.Name = "testlabel";
+            this.testlabel.Size = new System.Drawing.Size(35, 13);
+            this.testlabel.TabIndex = 2;
+            this.testlabel.Text = "label1";
+            // 
+            // btnGuardarVentas
+            // 
+            this.btnGuardarVentas.Location = new System.Drawing.Point(857, 25);
+            this.btnGuardarVentas.Name = "btnGuardarVentas";
+            this.btnGuardarVentas.Size = new System.Drawing.Size(119, 23);
+            this.btnGuardarVentas.TabIndex = 1;
+            this.btnGuardarVentas.Text = "Guardar Ventas";
+            this.btnGuardarVentas.UseVisualStyleBackColor = true;
+            this.btnGuardarVentas.Click += new System.EventHandler(this.btnGuardarVentas_Click);
+            // 
+            // btnGuardarCompras
+            // 
+            this.btnGuardarCompras.Location = new System.Drawing.Point(721, 25);
+            this.btnGuardarCompras.Name = "btnGuardarCompras";
+            this.btnGuardarCompras.Size = new System.Drawing.Size(109, 23);
+            this.btnGuardarCompras.TabIndex = 0;
+            this.btnGuardarCompras.Text = "Guardar Compras";
+            this.btnGuardarCompras.UseVisualStyleBackColor = true;
+            this.btnGuardarCompras.Click += new System.EventHandler(this.btnGuardar_Click);
+            // 
+            // menuStrip1
+            // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.toolStripMenuItem1,
+            this.librosToolStripMenuItem});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Size = new System.Drawing.Size(1132, 24);
+            this.menuStrip1.TabIndex = 3;
+            this.menuStrip1.Text = "menuStrip1";
+            // 
+            // toolStripMenuItem1
+            // 
+            this.toolStripMenuItem1.Name = "toolStripMenuItem1";
+            this.toolStripMenuItem1.Size = new System.Drawing.Size(48, 20);
+            this.toolStripMenuItem1.Text = "Inicio";
+            // 
+            // librosToolStripMenuItem
+            // 
+            this.librosToolStripMenuItem.Name = "librosToolStripMenuItem";
+            this.librosToolStripMenuItem.Size = new System.Drawing.Size(51, 20);
+            this.librosToolStripMenuItem.Text = "Libros";
             // 
             // frmRegistroCompra
             // 

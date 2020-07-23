@@ -24,7 +24,7 @@
       },
       "Datos/1.0.0": {
         "runtime": {
-          "prjSISCONT.dll": {}
+          "Datos.dll": {}
         }
       }
     }

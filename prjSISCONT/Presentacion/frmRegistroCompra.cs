@@ -177,5 +177,30 @@ namespace Presentacion
         {
             mostrarProveedor();
         }
+
+        private void dgvRegistroCompras_KeyDown(object sender, KeyEventArgs e)
+        {
+            
+         
+        }
+
+        private void dgvRegistroCompras_CellLeave_1(object sender, DataGridViewCellEventArgs e)
+        {
+           
+        }
+
+        private void dgvRegistroCompras_CellEndEdit(object sender, DataGridViewCellEventArgs e)
+        {
+            string message = "Simple MessageBox";
+            string title = "Title";
+            string str;
+            if(e.ColumnIndex == 8){
+                str = dgvRegistroCompras.Rows[e.RowIndex].Cells[e.ColumnIndex].Value.ToString();
+                MessageBox.Show(str, title);
+                dgvRegistroCompras.Rows[e.RowIndex].Cells[e.ColumnIndex + 2].Value = "Razon Social";
+            }
+           
+
+        }
     }
 }
