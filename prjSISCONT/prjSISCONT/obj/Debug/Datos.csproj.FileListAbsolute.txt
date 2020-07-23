@@ -1,8 +1,8 @@
-C:\Users\Developers\Source\Repos\SISCONT\prjSISCONT\prjSISCONT\bin\Debug\prjSISCONT.dll
-C:\Users\Developers\Source\Repos\SISCONT\prjSISCONT\prjSISCONT\bin\Debug\prjSISCONT.pdb
-C:\Users\Developers\Source\Repos\SISCONT\prjSISCONT\prjSISCONT\obj\Debug\prjSISCONT.Properties.Resources.resources
 C:\Users\Developers\Source\Repos\SISCONT\prjSISCONT\prjSISCONT\obj\Debug\Datos.csproj.GenerateResource.cache
 C:\Users\Developers\Source\Repos\SISCONT\prjSISCONT\prjSISCONT\obj\Debug\Datos.csproj.CoreCompileInputs.cache
-C:\Users\Developers\Source\Repos\SISCONT\prjSISCONT\prjSISCONT\obj\Debug\prjSISCONT.dll
-C:\Users\Developers\Source\Repos\SISCONT\prjSISCONT\prjSISCONT\obj\Debug\prjSISCONT.pdb
 C:\Users\Developers\Source\Repos\SISCONT\prjSISCONT\prjSISCONT\obj\Debug\Datos.csprojAssemblyReference.cache
+C:\Users\Developers\Source\Repos\SISCONT\prjSISCONT\prjSISCONT\bin\Debug\Datos.dll
+C:\Users\Developers\Source\Repos\SISCONT\prjSISCONT\prjSISCONT\bin\Debug\Datos.pdb
+C:\Users\Developers\Source\Repos\SISCONT\prjSISCONT\prjSISCONT\obj\Debug\Datos.Properties.Resources.resources
+C:\Users\Developers\Source\Repos\SISCONT\prjSISCONT\prjSISCONT\obj\Debug\Datos.dll
+C:\Users\Developers\Source\Repos\SISCONT\prjSISCONT\prjSISCONT\obj\Debug\Datos.pdb

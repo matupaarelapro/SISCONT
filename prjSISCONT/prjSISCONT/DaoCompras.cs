@@ -8,24 +8,45 @@ using System.Data.SqlClient;
 
 namespace Datos
 {
-    public class DaoRegistroCompras
+    public class DaoCompras
     {
         private Conexion conexion = new Conexion();
+
         SqlDataReader leer;
-        DataTable tabla = new DataTable();
+        DataTable dataTableCDPType = new DataTable();
         SqlCommand comando = new SqlCommand();
-        public DataTable all()
+        public DataTable allCdpTypes()
         {
 
             comando.Connection = conexion.openConnection();
-            comando.CommandText = "sp_all_registro_ventas";
+            comando.CommandText = "sp_all_tipo_comprobante";
             comando.CommandType = CommandType.StoredProcedure;
             leer = comando.ExecuteReader();
-            tabla.Load(leer);
+            dataTableCDPType.Load(leer);
             conexion.closeConnection();
-            return tabla;
+            return dataTableCDPType;
 
         }
+
+        SqlDataReader sqlDataReaderProvider;
+        DataTable dataTableProvider = new DataTable();
+        public DataTable showProveedor(string ruc)
+        {
+            comando.Connection = conexion.openConnection();
+            comando.CommandText = "sp_show_name_proveedor";
+            comando.CommandType = CommandType.StoredProcedure;
+
+            comando.Parameters.AddWithValue("@ruc", ruc);
+
+            comando.ExecuteNonQuery();
+
+            sqlDataReaderProvider = comando.ExecuteReader();
+            comando.Parameters.Clear();
+            dataTableProvider.Load(sqlDataReaderProvider);
+            conexion.closeConnection();
+            return dataTableProvider;
+        }
+
         public void insert(
             int mes, string nReg, string fechaEmision, string fechaPago, string cTipo, string cSeire, string cnDocumento,
             string pTipo, string pNumero, string pDocumento, string pRazonSocial, string cuenta, string descripcion, double baseImponible,
@@ -35,7 +56,7 @@ namespace Datos
             )
         {
             comando.Connection = conexion.openConnection();
-            comando.CommandText = "sp_insert_registro_ventas";
+            comando.CommandText = "sp_insert_registro_compras";
             comando.CommandType = CommandType.StoredProcedure;
 
             comando.Parameters.AddWithValue("@Mes", mes);
